@@ -1,0 +1,46 @@
+<div class="row">
+    <h1>Listado de remedios</h1>
+</div>
+<div class="row">
+    <table>
+        <tr>
+            <td>
+                id
+            </td>
+            <td>
+                nombre
+            </td>
+            <td>
+                descripcion
+            </td>
+        </tr>
+        {% for r in remedios %}
+        <tr>
+            <td>
+                {{r.idRemedio}}
+            </td>
+            <td>
+                {{r.nombreRemedio}}
+            </td>
+            <td>
+                {{r.descripcion}}
+            </td>
+            <td>
+                {{r.precio}}
+            </td>
+            <td>
+                {{r.cantidad}}
+            </td>
+            <td>
+                {{r.categoria}}
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+
+
+
+
+
+

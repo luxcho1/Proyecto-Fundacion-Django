@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
+from crud.models import *
 
 # Create your views here.
 def root(request):
@@ -18,3 +19,10 @@ def ubicacion(request):
 
 def contacto(request):
     return render(request,"core/contacto.html")
+
+def remedios(request):
+    context =   { 'remedios': Remedio.objects.all()}
+    return render(request,"core/remedios.html",context)
+
+
+

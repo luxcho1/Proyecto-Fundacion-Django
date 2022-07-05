@@ -45,6 +45,19 @@
             <li class="nav-item">
               <a class="nav-link" href="{% url 'nosotros' %}">Nosotros</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'registro' %}">Login</a>
+            </li>
+            <li class="nav-item">
+              {% if request.session.usuario.rol %}
+              <a class="nav-link" href="{% url 'logout' %}">Cerrar sesion</a>
+              {% endif %}  
+            </li>
+            <li class="nav-item">
+              {% if request.session.usuario.rol == 'ADMIN' %}
+              <a class="nav-link " href="/crud">Agregar Empleados</a>
+              {% endif %}  
+            </li>
           </ul>
           <button class="dm-config" onclick="lightMode()">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-brightness-low-fill wm-confi" viewBox="0 0 16 16">

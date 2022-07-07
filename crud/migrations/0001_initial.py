@@ -18,7 +18,7 @@ class Migration(migrations.Migration):
                 ('nombre', models.CharField(max_length=100, verbose_name='Nombre')),
                 ('descripcion', models.CharField(max_length=100, verbose_name='Descripción')),
                 ('edad', models.IntegerField(verbose_name='Edad')),
-                ('imagen', models.ImageField(blank=True, null=True, upload_to='productos', verbose_name='Imagen')),
+                ('imagen', models.ImageField(blank=True, null=True, upload_to='Producto', verbose_name='Imagen')),
             ],
             options={
                 'verbose_name': 'empleado',

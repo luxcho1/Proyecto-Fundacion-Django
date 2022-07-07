@@ -14,7 +14,7 @@
         {% endfor %}
     {% endif %}
     <div class="container">
-        <h1>Bienvenido {{request.session.usuario.first_name}}</h1>
+        <h1>Bienvenido Nombre: {{request.session.usuario.first_name}}  ROL: {{request.session.usuario.rol}}</h1>
     </div>
 
 {% endblock %}

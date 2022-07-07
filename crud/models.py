@@ -5,7 +5,7 @@ class Empleado(models.Model):
     nombre = models.CharField(max_length=100, verbose_name='Nombre')
     descripcion = models.CharField(max_length=100, verbose_name='Descripción')
     edad = models.IntegerField(verbose_name='Edad')
-    imagen = models.ImageField(verbose_name='Imagen',upload_to='productos',null=True,blank=True)
+    imagen = models.ImageField(verbose_name='Imagen',upload_to='Empleados',null=True,blank=True)
 
     class Meta:
         verbose_name='empleado'

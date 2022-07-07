@@ -88,10 +88,10 @@ def login(request):
                     return redirect('/success')
                 else:
                     messages.error(request,"Datos mal ingresados o el usuario no existe!!!")
-                    return redirect('core/home')
+                    return redirect('/home')
             else:
                 messages.error(request,"Datos mal ingresados o el usuario no existe!!!")
-                return redirect('core/home')
+                return redirect('/home')
             
 def logout(request):
     if 'usuario' in request.session:

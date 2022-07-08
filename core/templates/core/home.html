@@ -1,0 +1,185 @@
+<header class="container-fluid text-center bg-danger d-flex justify-content-center">
+    <h1 class="mb-2 p-1 fs-5">¿Te sientes solo? Recuerda recurrir a nuestro fono de ayuda +56969166242</h1>
+</header>
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'core/css/home.css' %}">
+<main>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="{% static 'core/img/salud1.jpg' %}" class="d-block w-100" alt="imagen1">
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'core/img/salud2.jpg' %}" class="d-block w-100" alt="imagen2">
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'core/img/salud3.jpg' %}" class="d-block w-100" alt="imagen3">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="container" id="Titulo1">
+        <div class="row">
+            <h1 class="pt-5 justify-content-center m-auto d-flex flex-column">
+                Fundada en el año 2022, nuestra mision siempre fue el pensar en el bienestar de las personas, y preocuparnos sobre la salud mental. Un apartado que no esta muy tomado en cuenta en nuestro pais. Contamos con expertos que estaran dispuestos para ayudarte.
+            </h1>
+        </div>
+    </div>
+
+    <!--========================================================== -->
+                        <!-- CARDS -->
+        <!--========================================================== -->
+
+        <section class="container-fluid">
+            <h2 class="text-center" id="Titulo2">Nuestros Expertos</h2>
+            <div class="row">
+              <div class="col-xl-6 ">
+                <div class="card m-auto mt-5 mb-5" style="max-width: 900px;" id="carta-1">
+                  <div class="row g-0">
+                    <div class="col-md-5">
+                      <img src="{% static 'core/img/card1.jpg' %}" class="img-fluid rounded-start" alt="imagen2" id="img-card-1">
+                    </div>
+                    <div class="col-md-7">
+                      <div class="card-body">
+                        <h5 class="card-title text-center fs-1">Maria Perez</h5>
+                        <p class="card-text text-center fs-4"> Con magister en medicina, Maria siempre tuvo un ojo sobre la importancia de la salud mental, asi que decidio dedicar su vida y su carrera a la investigacion de los efectos de la salud mental en la vida humana.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+                <div class="col-xl-6 ">
+                  <div class="card m-auto mt-5 mb-5" style="max-width: 900px;" id="carta-2">
+                    <div class="row g-0">
+                      <div class="col-md-5">
+                        <img src="{% static 'core/img/card2.jpg' %}" class="img-fluid rounded-start" alt="imagen2" id="img-card-2">
+                      </div>
+                      <div class="col-md-7">
+                        <div class="card-body">
+                          <h5 class="card-title text-center fs-1">Cristiano Ronaldo</h5>
+                          <p class="card-text text-center fs-4">Un gran medico, venido desde Portugal debido que allá tienen más consciencia sobre la importancia de la salud mental. Le gusta reflexionar sobre la vida y ademas tiene un talento para el futbol.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="col-xl-6 ">
+                  <div class="card m-auto mt-5 mb-5" style="max-width: 900px;" id="carta-3">
+                    <div class="row g-0">
+                      <div class="col-md-5">
+                        <img src="{% static 'core/img/card3.jpg' %}" class="img-fluid rounded-start" alt="imagen3" id="img-card-3">
+                      </div>
+                      <div class="col-md-7">
+                        <div class="card-body">
+                          <h5 class="card-title text-center fs-1">Gary "El pitbull" Medel</h5>
+                          <p class="card-text text-center fs-4">Un psicologo de alto prestigio, no por eso lo apodan el pitbull, siempre dando la cara por la importancia de la salud mental. Un gran amigo adentro y fuera de la cancha.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="col-xl-6">
+                  <div class="card m-auto mt-5 mb-5" style="max-width: 900px;" id="carta-4">
+                    <div class="row g-0">
+                      <div class="col-md-5">
+                        <img src="{% static 'core/img/card4.jpg' %}" class="img-fluid rounded-start" alt="imagen4" id="img-card-4">
+                      </div>
+                      <div class="col-md-7">
+                        <div class="card-body">
+                          <h5 class="card-title text-center fs-1">Victoria De Rota</h5>
+                          <p class="card-text text-center fs-4">Una de las primeras psicóloga en el pais en poner sus ojos en la mira de la salud mental. Tambien muy cercana, le gusta dar charlas en los colegios para hacer conciencia sobre la importancia de tener una buena salud mental</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+  
+  
+            <div class="row">
+              <div class="col-xl-6 m-auto mb-5" style="max-width: 900px;">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="{% static 'core/img/carousel1.jpg' %}" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="{% static 'core/img/carousel2.jpg' %}" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="{% static 'core/img/carousel3.jpg' %}" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+    
+          <section class="container-fluid">
+            <div class="row">
+              <h2 class="text-center" id="Titulo3">Nuestras opiniones en los medios</h2>
+  
+              <div class="col-xxl-4">
+                <img class="img-fluid rounded mx-auto d-block mb-5" src="{% static 'core/img/lun.png' %}" alt="lun">
+                <p class="justify-content-center fs-3" id="texto-medios-1">
+                  Una fundacion siempre dispuesta para los ayuda de la gente que realmente lo necesita. Cuenta con becas tambien para la gente que no tiene para pagar los valores de una buena atencion mental. <br> (Felipe Tapia)
+                </p>
+              </div>
+  
+              <div class="col-xxl-4">
+                <img class="img-fluid rounded mx-auto d-block mb-5" src="{% static 'core/img/tercera.png' %}" alt="tercera">
+                <p class="justify-content-center fs-3" id="texto-medios-2">
+                  Fueron los pioneros en la atencion mental, dandole la importancia que nunca se le habia dado en el pais, ademas cuentan con unas instalaciones modernas para atender a la gente. <br> (Sofia Carrasco)
+                </p>
+              </div>
+  
+              <div class="col-xxl-4 ">
+                <img class="img-fluid rounded mx-auto d-block mb-5" src="{% static 'core/img/duoc.png' %}" alt="duoc">
+                <p class="justify-content-center fs-3" id="texto-medios-3">
+                  Estamos muy contentos de colaborar con la fundacion debido a que somos conscientes de que la salud mental es muy importante para los jovenes universitarios y es un tema que no hay que dejar abandonado. <br> (German Toro)
+                </p>
+              </div>
+            </div>
+          </section>
+      </main>
+{% endblock %}
